@@ -1174,6 +1174,13 @@
   "Type": "Float",
   "Count": "3",
   "Value": "2.25,2.25,2.25"
+},
+
+{
+  "VendorTag": "com.oplus.dual.zoom.value",
+  "Type": "Float",
+  "Count": "1",
+  "Value": "2.0"
 }
 
 ]
