@@ -144,7 +144,7 @@
   "VendorTag": "com.oplus.front.night.yuv.picturesize",
   "Type": "Int32",
   "Count": "8",
-  "Value": "4608x3456x3456x3456x4096x2304x4096x1840"
+  "Value": "4608x3456x3456x3456x4608x2592x4608x2080"
 },
 
 {
@@ -414,13 +414,6 @@
 },
 
 {
-  "VendorTag": "com.oplus.face.beauty.open.default",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "0"
-},
-
-{
   "VendorTag": "com.oplus.bokeh.beauty.support",
   "Type": "Byte",
   "Count": "1",
@@ -557,14 +550,7 @@
   "VendorTag": "com.oplus.feature.super.text.support",
   "Type": "Byte",
   "Count": "1",
-  "Value": "0"
-},
-
-{
-  "VendorTag": "com.oplus.feature.breeno.scan",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "0"
+  "Value": "1"
 },
 
 {
@@ -621,13 +607,6 @@
   "Type": "Byte",
   "Count": "1",
   "Value": "#FFF8F8DE"
-},
-
-{
-  "VendorTag": "com.oplus.inverse.top.cover.support",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "1"
 },
 
 {
@@ -725,7 +704,7 @@
   "VendorTag": "com.oplus.feature.screen.bright.value",
   "Type": "Int32",
   "Count": "1",
-  "Value": "85"
+  "Value": "70"
 },
 
 {
@@ -900,7 +879,7 @@
   "VendorTag": "com.oplus.feature.id.photo.support",
   "Type": "Byte",
   "Count": "1",
-  "Value": "0"
+  "Value": "1"
 },
 
 {
@@ -919,6 +898,13 @@
 
 {
   "VendorTag": "com.oplus.feature.video.4k60fps.ultrawide.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.gesture.detect.in.aps",
   "Type": "Byte",
   "Count": "1",
   "Value": "1"
@@ -1076,6 +1062,13 @@
   "Type": "Int32",
   "Count": "1",
   "Value": "35"
+},
+
+{
+  "VendorTag": "com.oplus.disable.quick.jpeg.2x",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
 },
 
 {
