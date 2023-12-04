@@ -7,6 +7,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9rt/proprietary/odm/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_ODM)/bin/hw/android.hardware.drm@1.3-service.widevine \
+    vendor/oneplus/oneplus9rt/proprietary/odm/bin/hw/vendor.dolby_v3_6.hardware.dms360@2.0-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.dolby_v3_6.hardware.dms360@2.0-service \
     vendor/oneplus/oneplus9rt/proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service \
     vendor/oneplus/oneplus9rt/proprietary/odm/bin/init.oplus.fingerprints.sh:$(TARGET_COPY_OUT_ODM)/bin/init.oplus.fingerprints.sh \
     vendor/oneplus/oneplus9rt/proprietary/odm/bin/oplus_sensor_fb:$(TARGET_COPY_OUT_ODM)/bin/oplus_sensor_fb \
@@ -18,6 +19,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9rt/proprietary/odm/etc/acdbdata/Hdmi_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Hdmi_cal.acdb \
     vendor/oneplus/oneplus9rt/proprietary/odm/etc/acdbdata/Headset_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Headset_cal.acdb \
     vendor/oneplus/oneplus9rt/proprietary/odm/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Speaker_cal.acdb \
+    vendor/oneplus/oneplus9rt/proprietary/odm/etc/audio_effects.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_effects.xml \
     vendor/oneplus/oneplus9rt/proprietary/odm/etc/bt/hpnv10.bin:$(TARGET_COPY_OUT_ODM)/etc/bt/hpnv10.bin \
     vendor/oneplus/oneplus9rt/proprietary/odm/etc/bt/hpnv10_ch1.bin:$(TARGET_COPY_OUT_ODM)/etc/bt/hpnv10_ch1.bin \
     vendor/oneplus/oneplus9rt/proprietary/odm/etc/camera/CameraHWConfiguration.config:$(TARGET_COPY_OUT_ODM)/etc/camera/CameraHWConfiguration.config \
@@ -53,6 +55,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9rt/proprietary/odm/etc/camera/wide.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/wide.bin \
     vendor/oneplus/oneplus9rt/proprietary/odm/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/oneplus/oneplus9rt/proprietary/odm/etc/init/calibrationOutput_uw.rc:$(TARGET_COPY_OUT_ODM)/etc/init/calibrationOutput_uw.rc \
+    vendor/oneplus/oneplus9rt/proprietary/odm/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc \
     vendor/oneplus/oneplus9rt/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/oneplus/oneplus9rt/proprietary/odm/etc/lvacfs_params/2mic/LVACFS_Calibration360_2mic.dat:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/2mic/LVACFS_Calibration360_2mic.dat \
     vendor/oneplus/oneplus9rt/proprietary/odm/etc/lvacfs_params/2mic/LVACFS_Configuration.txt:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/2mic/LVACFS_Configuration.txt \
@@ -88,6 +91,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9rt/proprietary/odm/etc/lvacfs_params/3mic/audiozoom_1.txt:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/3mic/audiozoom_1.txt \
     vendor/oneplus/oneplus9rt/proprietary/odm/etc/lvacfs_params/3mic/audiozoom_2.txt:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/3mic/audiozoom_2.txt \
     vendor/oneplus/oneplus9rt/proprietary/odm/etc/lvacfs_params/3mic/audiozoom_3.txt:$(TARGET_COPY_OUT_ODM)/etc/lvacfs_params/3mic/audiozoom_3.txt \
+    vendor/oneplus/oneplus9rt/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
     vendor/oneplus/oneplus9rt/proprietary/odm/etc/sensor.cfg:$(TARGET_COPY_OUT_ODM)/etc/sensor.cfg \
     vendor/oneplus/oneplus9rt/proprietary/odm/etc/sensor/config/lahaina_qrd_ak0991x.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/lahaina_qrd_ak0991x.json \
     vendor/oneplus/oneplus9rt/proprietary/odm/etc/sensor/config/lahaina_qrd_alsps.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/lahaina_qrd_alsps.json \
@@ -109,7 +113,18 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9rt/proprietary/odm/lib/lib_lvacfs.so:$(TARGET_COPY_OUT_ODM)/lib/lib_lvacfs.so \
     vendor/oneplus/oneplus9rt/proprietary/odm/lib/libaudioEngineerTest.so:$(TARGET_COPY_OUT_ODM)/lib/libaudioEngineerTest.so \
     vendor/oneplus/oneplus9rt/proprietary/odm/lib/libc++_shared.so:$(TARGET_COPY_OUT_ODM)/lib/libc++_shared.so \
+    vendor/oneplus/oneplus9rt/proprietary/odm/lib/libdapparamstorage_v3_6.so:$(TARGET_COPY_OUT_ODM)/lib/libdapparamstorage_v3_6.so \
+    vendor/oneplus/oneplus9rt/proprietary/odm/lib/libdeccfg_v3_6.so:$(TARGET_COPY_OUT_ODM)/lib/libdeccfg_v3_6.so \
+    vendor/oneplus/oneplus9rt/proprietary/odm/lib/libdlbdsservice_v3_6.so:$(TARGET_COPY_OUT_ODM)/lib/libdlbdsservice_v3_6.so \
     vendor/oneplus/oneplus9rt/proprietary/odm/lib/liblvacfs_wrapper.so:$(TARGET_COPY_OUT_ODM)/lib/liblvacfs_wrapper.so \
+    vendor/oneplus/oneplus9rt/proprietary/odm/lib/libqtigef.so:$(TARGET_COPY_OUT_ODM)/lib/libqtigef.so \
+    vendor/oneplus/oneplus9rt/proprietary/odm/lib/libstagefright_soft_ac4dec.so:$(TARGET_COPY_OUT_ODM)/lib/libstagefright_soft_ac4dec.so \
+    vendor/oneplus/oneplus9rt/proprietary/odm/lib/libstagefright_soft_ddpdec.so:$(TARGET_COPY_OUT_ODM)/lib/libstagefright_soft_ddpdec.so \
+    vendor/oneplus/oneplus9rt/proprietary/odm/lib/libstagefrightdolby.so:$(TARGET_COPY_OUT_ODM)/lib/libstagefrightdolby.so \
+    vendor/oneplus/oneplus9rt/proprietary/odm/lib/soundfx/libhwdap_v3_6.so:$(TARGET_COPY_OUT_ODM)/lib/soundfx/libhwdap_v3_6.so \
+    vendor/oneplus/oneplus9rt/proprietary/odm/lib/soundfx/libswdap_v3_6.so:$(TARGET_COPY_OUT_ODM)/lib/soundfx/libswdap_v3_6.so \
+    vendor/oneplus/oneplus9rt/proprietary/odm/lib/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so \
+    vendor/oneplus/oneplus9rt/proprietary/odm/lib/vendor.dolby_v3_6.hardware.dms360@2.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.dolby_v3_6.hardware.dms360@2.0.so \
     vendor/oneplus/oneplus9rt/proprietary/odm/lib/vendor.oplus.hardware.performance-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.performance-V1-ndk_platform.so \
     vendor/oneplus/oneplus9rt/proprietary/odm/lib64/anc.hal.so:$(TARGET_COPY_OUT_ODM)/lib64/anc.hal.so \
     vendor/oneplus/oneplus9rt/proprietary/odm/lib64/camera/arcsoft_calibration_uw.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/arcsoft_calibration_uw.bin \
@@ -172,6 +187,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9rt/proprietary/odm/lib64/libarcsoft_triple_zoomtranslator.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_triple_zoomtranslator.so \
     vendor/oneplus/oneplus9rt/proprietary/odm/lib64/libarcsoft_videoautozoom.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_videoautozoom.so \
     vendor/oneplus/oneplus9rt/proprietary/odm/lib64/libc++_shared.so:$(TARGET_COPY_OUT_ODM)/lib64/libc++_shared.so \
+    vendor/oneplus/oneplus9rt/proprietary/odm/lib64/libdapparamstorage_v3_6.so:$(TARGET_COPY_OUT_ODM)/lib64/libdapparamstorage_v3_6.so \
+    vendor/oneplus/oneplus9rt/proprietary/odm/lib64/libdeccfg_v3_6.so:$(TARGET_COPY_OUT_ODM)/lib64/libdeccfg_v3_6.so \
+    vendor/oneplus/oneplus9rt/proprietary/odm/lib64/libdlbdsservice_v3_6.so:$(TARGET_COPY_OUT_ODM)/lib64/libdlbdsservice_v3_6.so \
     vendor/oneplus/oneplus9rt/proprietary/odm/lib64/libdualcam_optical_zoom_control.so:$(TARGET_COPY_OUT_ODM)/lib64/libdualcam_optical_zoom_control.so \
     vendor/oneplus/oneplus9rt/proprietary/odm/lib64/libdualcam_video_optical_zoom.so:$(TARGET_COPY_OUT_ODM)/lib64/libdualcam_video_optical_zoom.so \
     vendor/oneplus/oneplus9rt/proprietary/odm/lib64/libgf_hal_G3.so:$(TARGET_COPY_OUT_ODM)/lib64/libgf_hal_G3.so \
@@ -187,6 +205,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9rt/proprietary/odm/lib64/libormshalclient.so:$(TARGET_COPY_OUT_ODM)/lib64/libormshalclient.so \
     vendor/oneplus/oneplus9rt/proprietary/odm/lib64/libosenseaidlhalclient.so:$(TARGET_COPY_OUT_ODM)/lib64/libosenseaidlhalclient.so \
     vendor/oneplus/oneplus9rt/proprietary/odm/lib64/libosensehalclient.so:$(TARGET_COPY_OUT_ODM)/lib64/libosensehalclient.so \
+    vendor/oneplus/oneplus9rt/proprietary/odm/lib64/libqtigef.so:$(TARGET_COPY_OUT_ODM)/lib64/libqtigef.so \
     vendor/oneplus/oneplus9rt/proprietary/odm/lib64/libsnpe_dsp_domains_v2.so:$(TARGET_COPY_OUT_ODM)/lib64/libsnpe_dsp_domains_v2.so \
     vendor/oneplus/oneplus9rt/proprietary/odm/lib64/libsnpe_dsp_domains_v3.so:$(TARGET_COPY_OUT_ODM)/lib64/libsnpe_dsp_domains_v3.so \
     vendor/oneplus/oneplus9rt/proprietary/odm/lib64/libsnpe_htp.so:$(TARGET_COPY_OUT_ODM)/lib64/libsnpe_htp.so \
@@ -196,6 +215,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus9rt/proprietary/odm/lib64/libtriplecam_video_optical_zoom.so:$(TARGET_COPY_OUT_ODM)/lib64/libtriplecam_video_optical_zoom.so \
     vendor/oneplus/oneplus9rt/proprietary/odm/lib64/libwvhidl.so:$(TARGET_COPY_OUT_ODM)/lib64/libwvhidl.so \
     vendor/oneplus/oneplus9rt/proprietary/odm/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_ODM)/lib64/mediadrm/libwvdrmengine.so \
+    vendor/oneplus/oneplus9rt/proprietary/odm/lib64/soundfx/libhwdap_v3_6.so:$(TARGET_COPY_OUT_ODM)/lib64/soundfx/libhwdap_v3_6.so \
+    vendor/oneplus/oneplus9rt/proprietary/odm/lib64/soundfx/libswdap_v3_6.so:$(TARGET_COPY_OUT_ODM)/lib64/soundfx/libswdap_v3_6.so \
+    vendor/oneplus/oneplus9rt/proprietary/odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so \
+    vendor/oneplus/oneplus9rt/proprietary/odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.dolby_v3_6.hardware.dms360@2.0.so \
     vendor/oneplus/oneplus9rt/proprietary/odm/lib64/vendor.oplus.hardware.cameraextension-V1-service-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.cameraextension-V1-service-impl.so \
     vendor/oneplus/oneplus9rt/proprietary/odm/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk_platform.so \
     vendor/oneplus/oneplus9rt/proprietary/odm/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so \
@@ -1174,5 +1197,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.diag.hal.service \
     vendor.qti.hardware.limits@1.0-service \
     manifest_android.hardware.drm@1.3-service.widevine \
+    manifest_dax_dolby_v3_6 \
     manifest_oplus_cameraextension_aidl \
     manifest_oplus_fingerprint
