@@ -211,7 +211,8 @@
     "com.oplus.configure.fastvideo.hyperLapse":["lapse", "String", "3"]
   },
 
-  "vendor_tag_type_values":{
+  "vendor_tag_type_values": {
+    "com.oplus.authed.white.list":"com.ss.android.ugc.aweme, com.finshell.wallet",
     "com.oplus.sat.wide.support.imagesizes":"4096X3072X4096X2304X4096X1840X3072X3072",
     "com.oplus.sat.ultra.support.imagesizes":"4608x3456x4608x2592x4608x2080x3456x3456",
     "com.oplus.front.night.raw.picturesize":"2304X1728",
