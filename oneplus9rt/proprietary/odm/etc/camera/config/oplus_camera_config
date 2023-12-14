@@ -144,7 +144,7 @@
   "VendorTag": "com.oplus.front.night.yuv.picturesize",
   "Type": "Int32",
   "Count": "8",
-  "Value": "4608x3456x3456x3456x4608x2592x4608x2080"
+  "Value": "4608x3456x3456x3456x4096x2304x4096x1840"
 },
 
 {
@@ -414,6 +414,13 @@
 },
 
 {
+  "VendorTag": "com.oplus.face.beauty.open.default",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "0"
+},
+
+{
   "VendorTag": "com.oplus.bokeh.beauty.support",
   "Type": "Byte",
   "Count": "1",
@@ -550,7 +557,14 @@
   "VendorTag": "com.oplus.feature.super.text.support",
   "Type": "Byte",
   "Count": "1",
-  "Value": "1"
+  "Value": "0"
+},
+
+{
+  "VendorTag": "com.oplus.feature.breeno.scan",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "0"
 },
 
 {
@@ -607,6 +621,13 @@
   "Type": "Byte",
   "Count": "1",
   "Value": "#FFF8F8DE"
+},
+
+{
+  "VendorTag": "com.oplus.inverse.top.cover.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
 },
 
 {
@@ -704,7 +725,7 @@
   "VendorTag": "com.oplus.feature.screen.bright.value",
   "Type": "Int32",
   "Count": "1",
-  "Value": "70"
+  "Value": "85"
 },
 
 {
@@ -879,7 +900,7 @@
   "VendorTag": "com.oplus.feature.id.photo.support",
   "Type": "Byte",
   "Count": "1",
-  "Value": "1"
+  "Value": "0"
 },
 
 {
@@ -898,13 +919,6 @@
 
 {
   "VendorTag": "com.oplus.feature.video.4k60fps.ultrawide.support",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "1"
-},
-
-{
-  "VendorTag": "com.oplus.gesture.detect.in.aps",
   "Type": "Byte",
   "Count": "1",
   "Value": "1"
@@ -1065,13 +1079,6 @@
 },
 
 {
-  "VendorTag": "com.oplus.disable.quick.jpeg.2x",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "1"
-},
-
-{
   "VendorTag": "com.oplus.feature.macro.mode.support",
   "Type": "Byte",
   "Count": "1",
@@ -1174,6 +1181,48 @@
   "Type": "Float",
   "Count": "1",
   "Value": "2.0"
+},
+
+{
+  "VendorTag": "com.oplus.camera.support.activity.rotate",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.feature.ai.scene.hint.show.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.feature.face.beauty.custom.menu.refinement.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "0"
+},
+
+{
+  "VendorTag": "com.oplus.camera.support.early.start.gallery",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "0"
+},
+
+{
+  "VendorTag": "com.oplus.support.professional.mode.in.headline",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "0"
+},
+
+{
+  "VendorTag": "com.oplus.camera.pro.sat.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
 }
 
 ]
